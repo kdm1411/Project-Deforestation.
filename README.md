@@ -12,19 +12,23 @@
 - [Limitations](#limitations)
 - [References](#references)
   
-### Project Overview
+### Project Overview.
+---
 
 This data analysis project aims to provide insight into deforestation across the globe between 1990-2016. By analyzing various aspects of deforestatin data, we seek to identify trends, makes data driven decisions, and gain deeper understanding of deforestation across the world.
 
-### Data Source
+### Data Source.
+---
 
 Deforestation Data: The dataset used for this analysis are 'Forest_Area.csv', 'Land_Area.csv', 'Region.csv' file containing detail information of deforestation across the world between 1990-2016.
 
-### Tools
+### Tool.
+---
 
 - SQL Server - Data Cleaning, Data Analysis & Creating Reports
 
 ### Data Cleaning.
+---
 
 In the initial Data prepartion phase, we performed the following tasks:
 
@@ -33,7 +37,8 @@ In the initial Data prepartion phase, we performed the following tasks:
 3. Handling null values
 4. Check outliers
 
-### Exploratory Data Analysis
+### Exploratory Data Analysis.
+---
 
 EDA involves exploring the sales data to answer key questuions, such as:
 
@@ -43,7 +48,8 @@ EDA involves exploring the sales data to answer key questuions, such as:
 - Determine the total forest area in square km for countries in the 'high income' group. Compare result with the rest of the income categories.
 - Show countries from each region(continent) having the highest total forest areas.
 
-### Data Analysis
+### Data Analysis.
+---
 
 ```sql
 SELECT COUNT(distinct COUNTRY_NAME) AS TOTAL_NO_OF_COUNTRIES_INVL_DEFORESTATION FROM Forest_Area
@@ -76,6 +82,7 @@ select * from main_cte
 where rank = 1
 ```
 ### Results.
+---
 
  The analysis results are summarized as follows:
  
