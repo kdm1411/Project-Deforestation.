@@ -72,24 +72,32 @@ EDA involves exploring the sales data to answer key questuions, such as:
 SELECT COUNT(distinct COUNTRY_NAME) AS TOTAL_NO_OF_COUNTRIES_INVL_DEFORESTATION FROM Forest_Area
 where forest_area_sqkm != 0;
 ```
+![TOTAL NUMBER OF COUNTRIES INVOLVES IN DEFORESTATION](https://github.com/kdm1411/Project-Deforestation./assets/150349346/07de46ed-77f9-4f80-8f30-640caac6bd90)
+
 ```sql
 SELECT  DISTINCT L.COUNTRY_NAME, R.income_group
 FROM Region R join Land_Area L
 on r.country_code = L.country_code
 where total_area_sq_mi between '75000' and '150000';
 ```
+![income groups of countries having total area ranging from 75,000 to 150,000 square meter](https://github.com/kdm1411/Project-Deforestation./assets/150349346/ae1ed0f8-1ed6-47fb-bf3c-bd2b8f9b6589)
+
 ```sql
 select income_group, avg(total_area_sq_mi) Average_Area_in_Suqare_Miles from
 (select  R.country_name, R.income_group,R.Region, L.total_area_sq_mi from Region R join Land_Area L on R.country_code = L.country_code) as T
 group by income_group 
 having income_group in ('upper middle income','low income','high income','lower middle income');
 ```
+![Average area in square miles for countries Incomr groups](https://github.com/kdm1411/Project-Deforestation./assets/150349346/2038c009-21e2-4e5b-b402-ec7f62dd2fb1)
+
 ```sql
 select income_group, sum(forest_area_sqkm) as Total_forest_area_in_sqm from
 (select R.country_name, R.income_group, F.forest_area_sqkm from Forest_Area F join Region R on F.country_code = R.country_code) as T
 group by income_group
 having income_group in ('high income','low income','upper middle income','lower middle income');
 ```
+![total forest area in square km for countries income groups](https://github.com/kdm1411/Project-Deforestation./assets/150349346/df19e618-2c18-4631-959a-2b36de51802d)
+
 ```sql
 with main_cte as
 (select distinct r.country_name, Region, f.forest_area_sqkm,
@@ -98,6 +106,8 @@ from region r join Forest_area f on r.country_code = f.country_code)
 select * from main_cte
 where rank = 1
 ```
+![countries from each region(continent) having the highest total forest areas](https://github.com/kdm1411/Project-Deforestation./assets/150349346/8f11c697-4518-454d-899a-862ae408e7e9)
+
 ### Results.
 ---
 
