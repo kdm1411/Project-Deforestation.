@@ -1,4 +1,4 @@
-# Deforestation Analysis.
+# Deforestation Project - An SQL Project.
 
 ### Table of Contents.
 
@@ -33,9 +33,26 @@ Deforestation Data: The dataset used for this analysis are 'Forest_Area.csv', 'L
 In the initial Data prepartion phase, we performed the following tasks:
 
 1. Data loading and inspections
-2. Data filtering
-3. Handling null values
+2. Handling null values
+```sql
+SELECT DISTINCT COUNTRY_NAME FROM Forest_Area,
+WHERE FOREST_AREA_SQKM IS NULL
+SELECT FOREST_AREA_SQKM, CASE WHEN  FOREST_AREA_SQKM IS NULL THEN 0 ELSE FOREST_AREA_SQKM END FROM Forest_Area,
+UPDATE Forest_Area SET forest_area_sqkm = CASE WHEN  FOREST_AREA_SQKM IS NULL THEN 0 ELSE FOREST_AREA_SQKM END;
+```
+```sql
+SELECT DISTINCT TOTAL_AREA_SQ_MI FROM Land_Area
+WHERE TOTAL_AREA_SQ_MI IS NULL,
+SELECT TOTAL_AREA_SQ_MI, CASE WHEN TOTAL_AREA_SQ_MI IS NULL THEN 0 ELSE TOTAL_AREA_SQ_MI END FROM Land_Area,
+UPDATE Land_Area SET TOTAL_AREA_SQ_MI = CASE WHEN TOTAL_AREA_SQ_MI IS NULL THEN 0 ELSE TOTAL_AREA_SQ_MI END;
+```
 4. Check outliers
+```sql
+delete from Forest_Area where COUNTRY_NAME = 'world';
+```
+```sql
+delete from Land_Area where COUNTRY_NAME = 'world';
+```
 
 ### Exploratory Data Analysis.
 ---
