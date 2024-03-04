@@ -22,7 +22,7 @@ This data analysis project aims to provide insight into deforestation across the
 
 Deforestation Data: The dataset used for this analysis are 'Forest_Area.csv', 'Land_Area.csv', 'Region.csv' file containing detail information of deforestation across the world between 1990-2016.
 
-### Tool.
+### Tools.
 ---
 
 - SQL Server - Data Cleaning, Data Analysis & Creating Reports
