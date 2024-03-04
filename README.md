@@ -5,7 +5,13 @@
 - [Project Overview](#project-overview)
 - [Data Source](#data-source)
 - [Tools](#tools)
-
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data Analysis](#data-analysis)
+- [Results](#results)
+- [Recomendations](#recomendations)
+- [Limitations](#limitations)
+- [References](#references)
+  
 ### Project Overview
 
 This data analysis project aims to provide insight into deforestation across the globe between 1990-2016. By analyzing various aspects of deforestatin data, we seek to identify trends, makes data driven decisions, and gain deeper understanding of deforestation across the world.
