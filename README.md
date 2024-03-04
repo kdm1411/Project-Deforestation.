@@ -1,6 +1,12 @@
 # Deforestation Analysis.
 
-### Project Overview.
+### Table of Contents.
+
+- [Project Overview](#project-overview)
+- [Data Source](#data-source)
+- [Tools](#tools)
+
+### Project Overview
 
 This data analysis project aims to provide insight into deforestation across the globe between 1990-2016. By analyzing various aspects of deforestatin data, we seek to identify trends, makes data driven decisions, and gain deeper understanding of deforestation across the world.
 
@@ -67,7 +73,7 @@ where rank = 1
 
  The analysis results are summarized as follows:
  
- 1. The total number of countries invlove in deforestation are 207
+ 1. The total number of countries invlove in deforestation is 207
  2. Finland, Germany, Italy, Japan, New Zealand, Norway, Oman and Poland are categorize as high income groups while Burkina faso, Guinea, Uganda and Zimbambwe are categorize as low income groups having total area ranging from 75,000 to 150,000 square meter.
  3. The Upper middle income groups countries have the highest average total area in square miles, follow by the high income group countries while the low income groups of countries have the lowest.
  4. Upper middle income groups countries have the highest total forest area in square meter follow by the high income group countries while the the low income groups contries have the lowest total forest area in square meters.
@@ -77,9 +83,16 @@ where rank = 1
 
 Based on the analysis, we recommend the following actions:
 
-- 
+- High income and middle income countries have more forest area which contribute to their revenue generation, job availability etc other income groups like the low income should increase their forest area.
 
+### Limitations.
 
+I had to remove null values from forest_area_sqm and total_area_sqm column in forest and land table and outlier from country name column in forest area and land area table because they would have affected the accuracy on my my conclusion from the analysis.
+
+### References.
+
+1. [Our world in Data](https://ourworldindata.org/deforestation)
+2. [google](https://www.google.com/)
 
 
 
