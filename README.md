@@ -1,4 +1,6 @@
 # Deforestation Project - An SQL Project.
+![deforestation](https://github.com/kdm1411/Project-Deforestation./assets/150349346/ae3aadd3-a903-42ef-9c2d-7a538b0589c0)
+
 
 ### Table of Contents.
 
@@ -123,7 +125,7 @@ where rank = 1
 
 Based on the analysis, we recommend the following actions:
 
-- High income and middle income countries have more forest area which contribute to their revenue generation, job availability etc other income groups like the low income should increase their forest area.
+- High income and middle income countries benefited from deforestatation as it contribute to their revenue growth.
 
 ### Limitations.
 
