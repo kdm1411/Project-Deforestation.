@@ -71,10 +71,16 @@ EDA involves exploring the sales data to answer key questuions, such as:
 ---
 
 ```sql
-SELECT COUNT(distinct COUNTRY_NAME) AS TOTAL_NO_OF_COUNTRIES_INVL_DEFORESTATION FROM Forest_Area
-where forest_area_sqkm != 0;
+select count(country_name) TOTAL_NO_OF_COUNTRIES_INVL_DEFORESTATION from (
+select country_name, count(year) as year_without_deforestation from
+(select country_name, year, forest_area_sqkm,
+rank() over(partition by country_name order by forest_area_sqkm) rank from forest_area) u
+where rank = 2
+group by country_name) B
+where year_without_deforestation < 27;
 ```
-![TOTAL NUMBER OF COUNTRIES INVOLVES IN DEFORESTATION](https://github.com/kdm1411/Project-Deforestation./assets/150349346/07de46ed-77f9-4f80-8f30-640caac6bd90)
+![Numbers of Countries involves in deforestation](https://github.com/kdm1411/Project-Deforestation./assets/150349346/ebd4db99-efe0-4818-8b8b-041defd05664)
+
 
 ```sql
 SELECT  DISTINCT L.COUNTRY_NAME, R.income_group
