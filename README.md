@@ -121,7 +121,7 @@ where rank = 1
 
  The analysis results are summarized as follows:
  
- 1. The total number of countries invlove in deforestation is 207
+ 1. The total number of countries invlove in deforestation is 144, some countries do not deforeset for the 27 years e.g Afghanistan.
  2. Finland, Germany, Italy, Japan, New Zealand, Norway, Oman and Poland are categorize as high income groups while Burkina faso, Guinea, Uganda and Zimbambwe are categorize as low income groups having total area ranging from 75,000 to 150,000 square meter.
  3. The Upper middle income groups countries have the highest average total area in square miles, follow by the high income group countries while the low income groups of countries have the lowest.
  4. Upper middle income groups countries have the highest total forest area in square meter follow by the high income group countries while the the low income groups contries have the lowest total forest area in square meters.
