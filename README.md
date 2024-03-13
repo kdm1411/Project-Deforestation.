@@ -135,7 +135,7 @@ Based on the analysis, we recommend the following actions:
 
 ### Limitations.
 
-I had to remove null values from forest_area_sqm and total_area_sqm column in forest and land table and outlier from country name column in forest area and land area table because they would have affected the accuracy on my my conclusion from the analysis.
+I had to change null values to zero from forest_area_sqm and total_area_sqm column in forest and land table also remove  outliers from country name column in forest area and land area table because they would have affected the accuracy on my my conclusion from the analysis.
 
 ### References.
 
