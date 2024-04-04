@@ -59,7 +59,7 @@ delete from Land_Area where COUNTRY_NAME = 'world';
 ### Exploratory Data Analysis.
 ---
 
-EDA involves exploring the deforestation data to answer key questuions, such as:
+EDA involves exploring the deforestation data to answer key questions, such as:
 
 - What are the total number of countries involved in deforestation?
 - Show the income groups of countries having total area ranging from 75,000 to 150,000 square meter?
